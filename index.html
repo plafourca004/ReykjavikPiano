@@ -17,47 +17,53 @@
 </head>
 
 <body>
-  <div class = "oops-image">
+  <div class="oops-image">
     <img src="/assets/oops.jpg" alt="oopsImage" />
+    <p>This website requires at least 600px screen width</p>
   </div>
-  <div class = "buttonsPiano" >
-    <div class="floatContainer">
-        <form id="tune">
+  <div class="piano">
+    <div class="piano-controls">
+      <form id="tune">
+        <div class="control-bar">
           <label for="tunes">Tune:</label>
+        </div>
+        <div class="control-bar choix-tune">
           <select name="tunes" id="tunes">
             <option value="fur_elise">Für Elise</option>
             <option value="the_godfather">The Godfather</option>
             <option value="seven_nation_army">Seven Nation Army</option>
-          </select> 
-      <div id="playTunes">
-        <button type="button"> <img src="/assets/play.png" alt="playButton" widht="15px" height="15px" /></button>
-      </div>  
-      <div id="record">  
-        <p>Record: </p>
-        <button type="button"> <img src="/assets/stop.png" alt="stopButton" widht="15px" height="15px" /></button>
-        <button type="button"> <img src="/assets/record.png" alt="recordButton" widht="15px" height="15px" /></button>   
-      </div>
-      </form> 
-      
+          </select>
+        </div>
+        <div class="control-bar">
+          <button type="button"> <img class="small-buttons" src="/assets/play.png" alt="playButton" /></button>
+        </div>
+        <div class="control-bar record-label">
+          <p>Record: </p>
+        </div>
+        <div class="control-bar">
+          <button type="button"> <img class="small-buttons" src="/assets/record.png" alt="recordButton" /></button>
+          <button type="button"> <img class="small-buttons" src="/assets/stop.png" alt="stopButton" /></button>
+        </div>
+      </form>
     </div>
-    <div class="piano">
-      <button class="white c">C4 (a)</button>
-      <button class="black cs">C# (w)</button>
-      <button class="white d">D4 (s)</button>
-      <button class="black ds">D4# (e)</button>
-      <button class="white e">E4 (d)</button>
-      <button class="white f">F4 (f)</button>
-      <button class="black fs">F#4 (t)</button>
-      <button class="white g">G4 (g)</button>
-      <button class="black gs">G#4 (h)</button>
-      <button class="white a">A4 (h)</button>
-      <button class="black as">Bb4 (u)</button>
-      <button class="white b">B4 (j)</button>
-      <button class="white c">C5 (h)</button>
-      <button class="black cs">C#5 (k)</button>
-      <button class="white d">D5 (l)</button>
-      <button class="black ds">D#5 (p)</button>
-      <button class="white e">E5 (;)</button>
+    <div class="piano-keyboard">
+      <button class="white c"><span>C4 (a)</span></button>
+      <button class="black cs"><span>C#4 (w)</span></button>
+      <button class="white d"><span>D4 (s)</span></button>
+      <button class="black ds"><span>D#4 (e)</span></button>
+      <button class="white e"><span>E4 (d)</span></button>
+      <button class="white f"><span>F4 (f)</span></button>
+      <button class="black fs"><span>F#4 (t)</span></button>
+      <button class="white g"><span>G4 (g)</span></button>
+      <button class="black gs"><span>G#4 (y)</span></button>
+      <button class="white a"><span>A4 (h)</span></button>
+      <button class="black as"><span>Bb4 (u)</span></button>
+      <button class="white b"><span>B4 (j)</span></button>
+      <button class="white c"><span>C5 (k)</span></button>
+      <button class="black cs"><span>C#5 (o)</span></button>
+      <button class="white d"><span>D5 (l)</span></button>
+      <button class="black ds"><span>D#5 (p)</span></button>
+      <button class="white e"><span>E5 (;)</span></button>
     </div>
   </div>
 

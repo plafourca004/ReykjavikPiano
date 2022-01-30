@@ -1,7 +1,10 @@
 * {
-  box-sizing:border-box
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
 }
 
+/*MEDIA QUERY USED WHEN THE WINDOW'S SIZE IS LESS THAN 600px */
 .oops-image{
   display: none;
 }
@@ -9,42 +12,54 @@
 @media only screen and (max-width: 599px){ 
   .oops-image{
     display: block;
+    margin-left: 5%
   }
 
-  .buttonsPiano{
+  .piano{
     display: none;
   }
 }
 
-  .floatContainer {
-    width:600px;
-    height:190px;
-    padding-top:20px;
-    padding-left:15px;
-    padding-right:15px;
-}
-#tune {
-    float:center;
-    background-color:white;
-}
-#playTunes {
-    float:left;
-    background-color:white; 
-    margin-left:20px;
-}
-#record {
-    float:right;
-    background-color:white;
+
+.piano{
+  margin-left: 2em;
 }
 
+/* CONTROLS */
+
+.piano-controls {
+  margin-bottom: 1.5em;
+}
+
+.control-bar {
+  display: inline-block;
+}
+
+.record-label {
+  margin-left: 12%
+}
+
+.small-buttons{
+    height:15px;
+    width:15px;
+}
+
+.choix-tune {
+  width: 26%
+}
+
+.choix-tune select {
+  width: 100%
+}
 
 
 
+/* PIANO */
 
-.piano {
-  height:13em;
-  width:40em;
-  margin: 2em 6em 2em 6em;
+
+.piano-keyboard {
+  height:6.5em;
+  width:100%;
   padding: 0;
   position:relative;
 }
@@ -58,13 +73,19 @@
 }
 
 .white {
-  height:13em;
-  width:3.5em;
+  height:6.5em;
+  width:9.3%;
   z-index:1;
   border:2px outset #e6e5e6;
   background-color: white;
-  padding: 1em;
+  padding: 1%;
   font-size: 0.9em;
+}
+
+.white span {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
 }
 
 .white:active {
@@ -73,14 +94,22 @@
 }
 
 .black {
-  height:9em;
-  width:2.2em;
-  margin:0 -1.1em 0 0;
+  height:6em;
+  width: 5.3%;
+  margin:0 -2.65% 0 0;
   z-index:2;
   border:2px outset #e6e5e6;
   background-color: #050505;
   color: white;
   font-size: 0.8em;
+  text-align: center;
+  padding: 0
+}
+
+.black span {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
 }
 
 .black:active {
@@ -89,5 +118,5 @@
 }
 
 .a,.g,.f,.d,.c {
-  margin:0 -1.1em 0 0
+  margin:0 -2.65% 0 0
 }
